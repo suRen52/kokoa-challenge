@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.menu-bar{
+    background-color: #FFCE33;
+    display : flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-size: 20px
+}
+.menu-bar i{
+    margin : 0 30px;
+}
+
+.search-bar{
+    background: linear-gradient(to bottom, #FFCE33 50%, white 50%);
+    padding: 10px 5px;
+}
+.search-bar-bar{
+    display: flex;
+    justify-content: space-between;
+    margin : 0 10px;
+    padding : 17px 0;
+    border-radius: 9999px;
+    /*new 완전히 캡슐 모양을 만드는법*/
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /*new 그림자효과*/
+}
+.search-bar input{
+    border: none;
+    font-size: 15px;
+    opacity : 0.4;
+    margin-left:50px;
+}
+.search-bar i{
+    opacity : 0.4;
+    margin-right:50px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    margin:0 30px; 
+    /*위아래 여백을 만들고 싶음*/
+}
+
+.introduce-book{
+    display : flex;
+}
+
+.introduce-book img{
+    width : 100px;
+    height : 150px;
+    margin : 15px 35px;
+    border-radius: 10%;
+}
+.introduce-book__info{
+    margin : 15px 35px;
+}
+.introduce-book__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.introduce-book__author{
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.2);
+}
+.introduce-book__titleauthor{
+    display : flex;
+}
