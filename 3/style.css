@@ -1,0 +1,61 @@
+/* DONT DELETE THIS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+/* WRITE YOUR CODE BELOW */
+
+body{
+  background-color: aliceblue;
+  width: 500px;
+  display: flex;
+  flex-wrap : wrap;
+  justify-content: center;
+  align-self: start;
+}
+
+#title{
+  width : 500px;
+  background-color: aliceblue;
+  font-style: bold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin : 40px 0px;
+}
+
+.first{
+  border: solid white 5px;
+  margin : 10px;
+}
+
+.second{
+  background-color: white;
+  position : relative;
+  top : 20px;
+  height : 80px;
+  width: 200px;
+  font-style: bold;
+  font-size: 25px;
+}
+
+.first:nth-child(2){
+  background-color: tomato;
+  height : 300px;
+  width: 200px;
+}
+
+.first:nth-child(3){
+  background-color: teal;
+  height : 300px;
+  width: 200px;
+}
+
+.first:nth-child(4){
+  background-color: burlywood;
+  height : 300px;
+  width: 200px;
+}
+
+.first:nth-child(5){
+  background-color: thistle;
+  height : 300px;
+  width: 200px;
+}

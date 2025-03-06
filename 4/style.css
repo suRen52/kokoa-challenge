@@ -1,0 +1,76 @@
+/* 문제점1 : 전체 센터 정렬, wrap 을 사용하면 justify/align의 center가 작동되지 않는 이유는?*/
+
+body {
+  background-color: rgb(10, 193, 199);
+  height: 100vh;
+
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0.5turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+#bigcircle {
+  background-color: rgb(10, 193, 199);
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: rotation 1s infinite;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+@keyframes dancebar {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
+
+.squre {
+  height: 90px;
+  width: 30px;
+  background-color: white;
+  margin: 0 5px;
+
+  animation: dancebar 1.2s ease-in-out infinite;
+}
+/*더 부드러운 animation?*/
+
+.squre:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.squre:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.squre:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+.squre:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+.squre:nth-of-type(6) {
+  animation-delay: 1s;
+}
+/*의문 : n의 숫자가 하나씩 밀린 원인?*/

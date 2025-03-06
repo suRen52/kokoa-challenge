@@ -1,0 +1,149 @@
+body{
+  width : 250px;
+  height : 500px;
+  border : 5px solid rgb(11, 205, 179);
+
+  padding : 8%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.bar{
+  display : flex;
+  justify-content: space-between;
+  margin : 5px;
+}
+.bar__playlist:first-child i{
+  font-size: 25px;
+}
+.bar__playlist:last-child span{
+  font-size: 25px;
+  margin-right: 78px;
+}
+
+.song{
+  margin : 35px 0;
+  display : flex;
+}
+.song__info i{
+  font-size: 35px;
+  color : white;
+  margin : 20px;
+}
+.song__info:first-child{
+  border-radius:15%;
+  width : 80px;
+  height : 80px;
+  background-color: rgb(247, 195, 50);
+  border : 1.5px solid black;
+}
+.song__info:nth-child(2){
+  margin-left: 10px;
+}
+#name{
+  font-size : 29px;
+}
+#singer{
+  font-size : 15px;
+}
+
+.button{
+  margin : 20px 0;
+  display:flex;
+  justify-content: space-between;
+}
+.button__play span{
+  margin: 0 5px;
+}
+.button__play:nth-child(1){
+  width : 140px;
+  height : 40px;
+  border-radius:15%;
+  border : 1.5px black solid;
+  border-width: 1px 1px 4px 1px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__play:nth-child(2){
+  border-radius:50%;
+  width : 40px;
+  height : 40px;
+  border : 1.5px black solid;
+  border-width: 1px 1px 4px 1px;
+}
+.button__play:nth-child(2) i{
+  font-size: 25px;
+  margin : 7px;
+}
+.button__play:nth-child(3){
+  border-radius:50%;
+  width : 40px;
+  height : 40px;
+  border : 1.5px black solid;
+  border-width: 1px 1px 4px 1px;
+}
+.button__play:nth-child(3) i{
+  font-size: 25px;
+  margin : 7px;
+}
+
+.othersong__m,
+.othersong__a,
+.othersong__t,
+.othersong__s {
+  display: flex;
+  margin : 20px 0;
+ }
+
+.othersong__m:first-child{
+  width : 40px;
+  height : 40px;
+  border-radius:15%;
+  border : 1.5px black solid;
+  background-color: rgb(236, 82, 11);
+  margin : 5px 0;
+}
+.othersong__m--text{
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.othersong__a:first-child{
+  width : 40px;
+  height : 40px;
+  border-radius:15%;
+  border : 1.5px black solid;
+  background-color: rgb(251, 93, 190);
+  margin : 5px 0;
+}
+.othersong__a--text,
+.othersong__t--text,
+.othersong__s--text{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.othersong__t:first-child{
+  width : 40px;
+  height : 40px;
+  border-radius:15%;
+  border : 1.5px black solid;
+  background-color: rgb(45, 105, 234);
+  margin : 5px 0;
+}
+.othersong__s:first-child{
+  width : 40px;
+  height : 40px;
+  border-radius:15%;
+  border : 1.5px black solid;
+  background-color: rgb(41, 203, 181);
+  margin : 5px 0;
+}
+#big{
+  font-size : 20px;
+}
+#gr{
+  color: grey;
+  font-size : 13px;
+}
