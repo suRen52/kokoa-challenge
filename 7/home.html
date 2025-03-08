@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge 7</title>
-    <link rel="stylesheet" href="7/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,10 +17,12 @@
                 <i class="fa-solid fa-magnifying-glass fa-2x "></i>
             </div>
 
-            <img class="left__artist-img" src="">
-            <div class="left__artist">
+            <div class="left__artist_"> <!--img는 inline-->
+            <img class="left__artist-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0aYaRFPVU7IRdpCU-13gOHxmej_yDTEn-Wg&s">
+            </div>
+            <div class="left__artist__">
                 <h1 class="left__artist-name">SPYAIR</h1>
-                <span class="left__artist=genre">genre</span>
+                <p class="left__artist-genre">Rock</p>
             </div>
 
             <div class="left__btn">
@@ -30,42 +32,50 @@
 
 
             <div class="left__othersongs">
-                <!--반복되는 구성을 따로 뺄 수 있을지 시도해보기-->
-                <div class="left__othersongs-one">
-                    <!--img-->
-                    <div class="left__othersongs-one-info">
+                <div class="left__othersongs-list">
+                <div class="left__othersongs-foursong">
+                    <div class="left__othersongs-playing">
+                    <img src="https://image.yes24.com/goods/9237499/XL"/>
+                    <i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="left__othersongs-info">
                         <span class="left__othersongs-artist">SPYAIR</span>
-                        <span class="left__othersongs-song">songname</span></div> 
+                        <span class="left__othersongs-song">Widing Road</span></div> 
                     <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                 </div>
 
-                <div class="left__othersongs-two">
-                    <!--img-->
-                    <div class="left__othersongs-two-info">
+                <div class="left__othersongs-foursong">
+                    <img src="https://image.bugsm.co.kr/album/images/500/3418/341816.jpg"/>
+                    <div class="left__othersongs-info">
                         <span class="left__othersongs-artist">SPYAIR</span>
-                        <span class="left__othersongs-song">songname</span></div> 
+                        <span class="left__othersongs-song">Raise your hands</span></div> 
                     <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                 </div>
 
-                <div class="left__othersongs-three">
-                    <!--img-->
-                    <div class="left__othersongs-three-info">
+                <div class="left__othersongs-foursong">
+                    <img src="https://image.bugsm.co.kr/album/images/500/3418/341816.jpg"/>
+                    <div class="left__othersongs-info">
                         <span class="left__othersongs-artist">SPYAIR</span>
-                        <span class="left__othersongs-song">songname</span></div> 
+                        <span class="left__othersongs-song">Little Summer</span></div> 
                     <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                 </div>
 
-                <div class="left__othersongs-four">
-                    <!--img-->
-                    <div class="left__othersongs-four-info">
+                <div class="left__othersongs-foursong">
+                    <img src="https://image.aladin.co.kr/product/1315/38/cover500/358115336x_1.jpg"/>
+                    <div class="left__othersongs-info">
                         <span class="left__othersongs-artist">SPYAIR</span>
-                        <span class="left__othersongs-song">songname</span></div> 
+                        <span class="left__othersongs-song">LINK IT ALL</span></div> 
                     <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                </div>
                 </div>
             </div>
 
             <div class="left__paly-bar">
-                <!--채워넣기-->
+               <div class="left__paly-bar-song">
+                <span class="left__paly-bar-song-artist">SPYAIR</span>
+                <span class="left__paly-bar-song-name">Widing Road</span></div>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
             </div>
 
         </div>
@@ -75,6 +85,32 @@
                 <i class="fa-solid fa-arrow-left fa-2x"></i>
                 <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
             </div>
+
+            <div class="right__albumcover">
+            <img src="https://image.yes24.com/goods/9237499/XL"/></div>
+
+            <div class="right__songname">
+                <div class="right__songname-title"><span>Winging Road</span></div>
+                <div class="right__songname-artist"><span>SPYAIR</span></div>
+            </div>
+
+            <div class="right__play-bar">
+                <div class="right__play-bar-time">
+                <span>2:06</span>
+                <span>5:20</span></div>
+                <!--palybar 구현은 어떻게 하지-->
+                <div class="right__play-bar-bar">
+                <span>ㅡㅡㅡㅡㅡㅡoㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</span></div>
+            </div>
+
+            <div class="right__play-icon">
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <div id="circle"><i class="fa-solid fa-play"></i></div>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+
         </div>
 
     </div>

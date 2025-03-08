@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:wght@400;700&family=Quicksand:wght@300..700&family=Schoolbell&family=Ubuntu&display=swap');
+
+body{
+    background-color:#F2F2F4;
+    color : #222222;
+    font-family: "Quicksand", sans-serif;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    display: flex;
+    gap: 100px;
+}
+
+.right, 
+.left{
+    width : 360px;
+    height: 820px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left__menu-bar{
+    margin : 30px 25px;
+    display : flex;
+    justify-content: space-between;
+}
+
+.left__artist_{
+    display: flex;
+    justify-content: center;
+}
+.left__artist-img{
+    width : 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left__artist__{
+    display: flex;
+    /*justify-content: center; 만 사용하면 두 글자가 옆으로 정렬되면서 사이즈가 안맞아 아래글자가 위로 올라가는 현상 발생*/
+    flex-direction: column;
+    align-items: center; /*inline 요소이므로 itemㄴ사용*/
+
+    position: relative;
+}
+.left__artist-name{
+    font-size : 35px;
+    font-weight: 1000;
+}
+.left__artist-genre{
+    font-size: 18px;
+    color : #BEBFBE;
+    position : absolute;
+    top : 50px;
+}
+
+.left__btn{
+    display: flex;
+    margin : 20px;
+    justify-content : center;
+    gap: 10px;
+}
+.left__btn-shu{
+    background-color: #222222;
+    color :white;
+    border-radius: 9999px;
+    padding : 10px;
+    width : 120px;
+    display : flex;
+    justify-content : center;
+}
+.left__btn-like{
+    background-color: #FFFFFF;
+    color :#BEBFBE; 
+    border-radius: 9999px;
+    padding : 10px;
+    width : 120px;
+    display : flex;
+    justify-content : center;
+}
+.left__btn i{
+    color : black;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.left__othersongs{
+    display: flex;
+    align-content : center;
+    margin : 35px;
+}
+.left__othersongs-list{
+    display : flex;
+    flex-direction: column;
+}
+.left__othersongs-foursong{
+    display : flex;
+    margin : 15px 0;
+    width: 290px;
+}
+.left__othersongs-playing{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.left__othersongs img,
+.left__othersongs-playing img{
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+}
+.left__othersongs-playing i{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px;
+    border-radius: 50%;
+}
+.left__othersongs-info{
+    display : flex;
+    flex-direction: column;
+    margin-left : 20px;
+}
+.left__othersongs-artist{
+    color :#BEBFBE; 
+}
+.left__othersongs-song{
+    font-size: 20px;
+    font-weight: 500;
+}
+.left__othersongs i{
+    color :#9d9e9d; 
+    font-size:20px;
+    margin-left: auto; /*i를 맨 오른쪽으로 이동시킴*/
+    margin-top : 15px;
+}
+
+.left__paly-bar{
+    background-color: #222222;
+    border-radius: 9999px;
+    width : 310px;
+    height: 70px;
+    margin : 30px 5px;
+    padding: 0 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /*아이콘오른쪽사이드*/
+}
+.left__paly-bar-song{
+    display: flex;
+    flex-direction: column;
+    margin-left : 15px;
+}
+.left__paly-bar-song-artist{
+    color :#BEBFBE; 
+}
+.left__paly-bar-song-name{
+    color : white;
+}
+.left__paly-bar i{
+    color : white;
+    margin : 0 8px;
+}
+
+
+
+.right__menu-bar{
+    margin : 30px 25px;
+    display : flex;
+    justify-content: space-between;
+}
+.right__albumcover{
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+
+   /* display: flex;/*적용안됨
+    justify-content: center;
+    align-items: center; */
+    margin-left : 55px;
+}
+.right__albumcover img{
+    width: 100%;
+    height: 100%; /*.right__albumcover가 img를 감싸고 있지만 정렬이 적용되지 않음*/
+    border-radius: 10%;
+}
+
+.right__songname{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+.right__songname-title{
+    font-size : 35px;
+    font-weight: 1000;
+    margin-top : 50px;
+}
+.right__songname-artist{
+    font-size: 18px;
+    color : #BEBFBE;
+    margin : 20px 0;
+}
+
+/*재생바*/
+.right__play-bar{
+    margin : 40px;
+}
+.right__play-bar-time{
+    color : #CECECE;
+    display: flex;
+    justify-content: space-between;
+}
+.right__play-bar-bar{
+    color : #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.right__play-icon{
+    display: flex;
+    justify-content: space-between;
+    margin : 70px 25px;
+}
+.right__play-icon i:nth-child(1),
+.right__play-icon i:nth-child(5){
+    color : #CECECE;
+    font-size: 15px;
+    margin-top : 20px;
+}
+.right__play-icon i:nth-child(2),
+.right__play-icon i:nth-child(4){
+    color : #222222;
+    font-size: 25px;
+    margin-top : 15px;
+}
+#circle i{
+    color : white;
+    font-size: 25px;
+}
+#circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #222222;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
